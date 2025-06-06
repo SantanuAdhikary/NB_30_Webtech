@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+   
+</head>
+<body>
+    
+    <h1> Student Registration Form</h1>
+
+    <form action="" method="get" autocomplete="off">
+
+
+        <fieldset>
+
+            <legend> student personal info</legend>
+
+            <label for="sname"> Student Name </label>
+            <input type="text" id="sname" name="sname" placeholder="enter your name" value="" required>  <br> <br>
+    
+            <label for="ph">Phone Number</label>
+            <input type="tel" id="ph" name="sphno" placeholder="enter your phone number" minlength="10">  <br> <br>
+    
+            <label for="pass">Password</label>
+            <input type="password" name="spass" id="pass" placeholder="enter password" minlength="4" maxlength="6"> <br> <br>
+            
+            <label for="age">student age</label>
+            <input type="number" name="sage" id="age" placeholder="enter your age">  <br> <br>
+    
+            <label for="admin">admin email</label>
+            <input type="email" name="adminEmail" id="admin" value="admin@gmail.com" readonly> <br><br>
+    
+            <label for="email">Sudent email</label>
+            <input type="email" name="semail" id="email" placeholder="enter email" >  <br><br>
+        </fieldset>
+        
+        <fieldset>
+
+            <legend>additional info</legend>
+            
+                    <label for="">Subjects</label> <br><br>
+            
+                    <label for="sub1">HTML</label>
+                    <input type="checkbox" name="sub1" id="sub1" value="html">
+            
+                    <label for="sub2">CSS</label>
+                    <input type="checkbox" name="sub2" id="sub2" value="css">
+            
+                    <label for="sub3">JS</label>
+                    <input type="checkbox" name="sub3" id="sub3" value="javascript">   <br><br>
+            
+                    <label for="">Select Your Gender</label> <br><br>
+            
+                    <label for="g1">Male</label>
+                    <input type="radio" name="gender" id="g1" value="male">
+            
+                    <label for="g2">Female</label>
+                    <input type="radio" name="gender" id="g2" value="female">
+            
+                    <label for="g3">Others</label>
+                    <input type="radio" name="gender" id="g3" value="others">   <br><br>
+            
+            
+                    <label for="">Date Of Birth</label>
+                    <input type="date" name="dob" id="">   <br><br>
+            
+                    <label for="address"> Address </label> <br>
+            
+                    <textarea name="address" id="address"  cols="20" rows="10" placeholder="enter your address"></textarea>   <br><br>
+            
+            
+                    <label for="">Select The Courses</label>
+            
+                    <select name="course" id="">
+                        <option value=""> select from here</option>
+                        <option value="java"> java fullstack</option>
+                        <option value="python">python fullstack</option>
+                        <option value="mern">MERN stack</option>
+                    </select>
+            
+                    <br><br>
+            
+                    <label for="">Expected Salary</label>
+                    <input type="range" name="salary" id="" min="10000" max="100000">
+        </fieldset>
+
+   
+
+        <fieldset>
+            <legend> submit and reset </legend>
+            <button type="submit"> register </button>
+            <button type="reset"> reset </button>
+              <input type="submit" value="submit by input">
+              <input type="reset" value="reset by input">
+        </fieldset>
+
+      
+        
+    </form>
+</body>
+</html> 

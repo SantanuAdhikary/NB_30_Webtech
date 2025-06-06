@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div tag</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        #footer{
+            background-color: black;
+            color:white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: calc(100vh - 380px);
+        }
+        #nav{
+            background-color: antiquewhite;
+            height: 80px;
+            text-align: center;
+        }
+
+        #main{
+            height: 300px;
+            background-color: aqua;
+            display: flex;
+        }
+
+        #left{
+            flex-basis: 50%;
+            background-color: red;
+        }
+        #right{
+            flex-basis: 50%;
+            background-color: yellow;
+        }
+
+        .card{
+            height: 150px;
+            width: 250px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+         <h2> I am navbar</h2>
+    </div>
+
+    <div id="main">
+        <div id="left"> <h3> I am left</h3></div>
+        <div id="right"> <h3> i am right</h3></div>
+    </div>
+
+    <div id="footer">
+
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        
+    </div>
+</body>
+</html>
