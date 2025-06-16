@@ -1,0 +1,121 @@
+
+
+nav{
+    background-color: antiquewhite;
+}
+
+
+nav > h2:hover{
+
+    color:red;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+header{
+    height: 200px;
+    background-color: aqua;
+}
+
+header > h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+header > h1:active{
+    color:green;
+}
+
+
+section{
+    background-color: cadetblue;
+}
+
+
+section > h1:nth-child(2)
+{
+    color:white;
+}
+
+
+section > p:nth-child(6)
+{
+    background-color: red;
+}
+
+section > ol > li:nth-child(2n)
+{
+    background-color: white;
+}
+
+section > ol > li:nth-child(2n+1)
+{
+    background-color: gray;
+}
+
+
+
+article > h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+article > p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+article > p::first-letter{
+    font-size: 50px;
+}
+
+article > p::first-line{
+    font-style: italic;
+}
+
+
+
+article > h1::before{
+    content: "***";     
+    color:red;
+}
+
+article > h1::after{
+    content : " !!";
+    color:green;
+}
+
+
+article::selection{
+    background-color: black;
+    color:white;
+
+}
+
+
+
+article > ol > li::marker{
+    color:red;
+}
+
+
+
+article > ol >li:nth-child(2n+1)::marker{
+    color:blue;
+    font-weight: bold;
+}
+
+
+
+form > input[type="text"]{
+    background-color: gray;
+}
+
+
+.container > a[target="_self"]{
+
+    font-size: 20px;
+}

@@ -1,0 +1,31 @@
+
+#con1{
+
+    background-color: aqua;
+    height: 200px;
+}
+
+
+/* !  1. descendent Selector */
+
+#con1 #heading2{
+    color:red;
+}
+
+
+#con1 .box{
+    background-color: yellow;
+    height: 100px;
+}
+
+
+/* ! 2. Direct Child Selector */
+
+
+#con2 > h2{
+    color:green;
+}
+
+#con2 > .box > h2{
+    color:blue;
+}

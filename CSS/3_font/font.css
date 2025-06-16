@@ -1,0 +1,42 @@
+
+#nav{
+
+    background-color: antiquewhite;
+    height: 100px;
+}
+
+.main{
+    height: 350px;
+    background-color: yellow;
+}
+
+
+#nav > h2{
+    color:red;
+
+    font-style: italic;
+}
+
+
+.main > p{
+    font-size: 20px;
+}
+
+.main > p > span{
+
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: red;
+}
+
+
+*{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main > ol{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}

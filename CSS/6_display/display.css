@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    width: 600px;
+    border: 2px solid green;
+}
+
+.container > .box{
+    height: 70px;
+    width: 80px;
+    border: 2px solid red;
+}
+
+
+.container > #box1{
+    display: inline-block;
+}
+.container > #box2{
+    display: inline-block;
+}
+.container > #box3{
+    display: inline-block;
+}
+.container > #box4{
+    display: inline;
+}
+
+
+.container > button{
+    display: block;
+}
+
+
+.container > p{
+    display: none;
+}
+
+
+
+.card{
+    width: 300px;
+    border: 3px solid black;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.card > button{
+    display: block;
+    width:100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+}
+
+
+.card > button:hover{
+    background-color: orangered;
+    color:white;
+}
