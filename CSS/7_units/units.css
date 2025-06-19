@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.con2{
+    height: 400px;
+   
+    width: 600px;
+    background-color: red;
+}
+
+
+/* .con2 > .box2{
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+} */
+.con2 > .box2{
+    height: 90%;
+    width: 50%;
+    background-color: yellow;
+}
+
+
+
+
+.con1{
+    background-color: black;
+    height: 50vh;
+    width: 60vw;
+}
