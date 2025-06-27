@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+
+nav > h1{
+    letter-spacing: 1.3px;
+    color:orangered;
+}
+
+nav > ul > li{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+nav > ul>li:hover{
+    color:orangered;
+}
+
+section{
+    height: 600px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > .container{
+    height: 450px;
+    width: 650px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 8px 6px rgba(0,0,0,0.6);
+    
+    position: relative;
+   
+}
+
+
+#box1{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    color:white;
+
+   /* position: relative;
+   left:30px;
+   bottom:10px; */
+
+
+   position: absolute;
+   right:0px;
+   bottom:0px;
+  
+
+}
+#box2{
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    color:white;
+
+    position: absolute;
+    right:0;
+ 
+}
+#box3{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    color:white;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+
+    transform: translate(-50%,-50%);
+   
+}
+#box4{
+    height: 80px;
+    width: 80px;
+    background-color: green;
+    color:white;
+    position: absolute;
+    bottom:0;
+}
+#box5{
+    height: 90px;
+    width: 90px;
+    background-color: yellow;
+    
+}
