@@ -110,3 +110,144 @@ section > .container{
     background-color: yellow;
     
 }
+
+.main{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    background: #888;
+}
+
+.main > h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:white;
+    text-shadow: 0px 2px 3px black;
+}
+
+.main > p{
+    font-size: 21px;
+    color: white;
+}
+
+.main > p > span{
+    font-weight: bold;
+    font-size: 24px;
+    color:black
+    
+}
+article{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+
+
+article > .box{
+    height: 250px;
+    width: 360px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+}
+
+.box > img{
+    height: 100px;
+}
+
+.map > iframe{
+    width: 100%;
+}
+
+
+.contact{
+    background-color: antiquewhite;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact > .inner{
+    background-color: white;
+    width: 80%;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 6px black;
+    border-radius: 20px;
+}
+
+form > input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+form > input::placeholder{
+    font-size: 16px;
+}
+
+form > textarea::placeholder{
+    font-size: 16px;
+}
+form > textarea{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+form > .formGroup{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.formGroup > button{
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: gray;
+    font-size: 20px;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;     
+}
+
+.formGroup > button:hover{
+    background-color: #ccc;
+    color:black;
+}
+
+
+footer{
+    height: 70px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-size: 20px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
