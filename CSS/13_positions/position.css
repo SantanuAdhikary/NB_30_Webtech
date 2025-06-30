@@ -11,6 +11,12 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    top:0px;
+
+    z-index: 1;
+ 
 }
 
 nav > ul{
@@ -42,6 +48,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
 }
 
 section > .container{
@@ -251,3 +258,11 @@ footer > p{
     letter-spacing: 2px;
     font-weight: bold;
 }
+
+
+.main > h1{
+    position: sticky;
+    top:200px;
+    z-index: 2;
+}
+
