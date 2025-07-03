@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-image: linear-gradient(to right,white , blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+
+   
+}
+.card2{
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    position: relative;
+}
+
+.card > .box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+    animation: move 2s ease-in  infinite alternate;   
+
+}
+
+.card2 > .box{
+    height: 90px;
+    width: 90px;
+    background-color: yellow;
+    position: absolute;
+    animation: rotateBox 2s linear infinite ;
+}
+
+.card2 > #b4{
+    bottom:0;
+    right:0;
+}
+
+.card2 > #b3{
+    right:0;
+}
+
+.card2> #b2{
+    bottom: 0;
+}
+.card2> #b5{
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+@keyframes move {
+    
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(200px,0);
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
+
+@keyframes rotateBox {
+    
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    
+    display: flex;
+}
+
+.outer > .left{
+ 
+    flex-basis: 55%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .right{
+   flex-basis: 45%;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.right > h1{
+    color:white;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    font-size: 45px;
+}
+
+
+.right > .inner{
+    width: 380px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+form > input{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+form > label{
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+form > button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #555;
+    color:white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.inner > .footer{
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer > p{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.footer > a{
+    text-decoration: none;
+    font-size: 18px;
+    color:blue;
+}

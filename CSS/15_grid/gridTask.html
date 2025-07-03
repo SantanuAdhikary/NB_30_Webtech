@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .outer{
+            height: 100vh;
+            background-image: linear-gradient(red,black);
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer > .inner{
+            width: 80vw;
+            background-color: white;
+            height: 70vh;
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            border-radius: 20px;
+        }
+
+        .outer > h1{
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+
+        .inner > .card{
+            /* border: 2px solid; */
+
+            background-size: cover;
+            background-position: top;
+            transition: all 1.3s ease-in;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .card > h2{
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color:white;
+            text-shadow: 0px 2px 2px black;
+            font-size: 35px;
+        }
+
+        .inner > #card1{
+            grid-row: span 2;
+            background-image: url("https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg");
+             border-top-left-radius: 20px;
+        }
+
+        .inner > #card2{
+            background-image: url("https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg");
+        }
+        .inner > #card3{
+            background-image: url("https://images.pexels.com/photos/1043458/pexels-photo-1043458.jpeg");
+             border-top-right-radius: 20px;
+        }
+        
+        .inner > #card4{
+            grid-column: span 2;
+            background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg");
+        }
+        .inner > #card5{
+            background-image: url("https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg");
+            border-bottom-left-radius: 20px;
+        }
+        .inner > #card6{
+            background-image: url("https://images.pexels.com/photos/33044/sunflower-sun-summer-yellow.jpg");
+        }
+        .inner > #card7{
+            background-image: url("https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg");
+             border-bottom-right-radius: 20px;
+        }
+
+        .inner > .card:hover{
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer">
+        <h1> grid task</h1>
+        <div class="inner">
+            <div class="card" id="card1">
+                <h2> mountain</h2>
+            </div>
+            <div class="card" id="card2">
+                <h2>sea</h2>
+            </div>
+            <div class="card" id="card3">
+                <h2>garden</h2>
+            </div>
+            <div class="card" id="card4">
+                <h2> sun rise</h2>
+            </div>
+            <div class="card" id="card5">
+                <h2> ocean</h2>
+            </div>
+            <div class="card" id="card6">
+                <h2>summer</h2>
+            </div>
+            <div class="card" id="card7">
+                <h2> spring</h2>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

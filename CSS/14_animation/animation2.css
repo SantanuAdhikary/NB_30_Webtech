@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background:linear-gradient(red,yellow);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card1{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2{
+    height: 300px;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 50%;
+animation: spinner 1s linear infinite;
+
+}
+.card3{
+    height: 300px;
+    width: 300px;
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+
+.card1 > .circle{
+    height: 100px;
+    width: 100px;
+    /* border: 3px solid green; */
+
+    border-top: 3px solid green;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+}
+
+
+.card2 > .box2{
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+
+/* animation: spinner 1s linear infinite; */
+
+
+
+}
+
+
+
+@keyframes spinner {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.card3 > .dot{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+
+    animation: up_down 2s ease-in infinite alternate;
+}
+
+#dot2{
+    animation-delay: 0.1s;
+    background-color: blue;
+}
+#dot3{
+    animation-delay: 0.2s;
+    background-color: black;
+}
+#dot4{
+    animation-delay: 0.3s;
+    background-color: green;
+}
+
+@keyframes up_down {
+    
+    from{
+        transform: translateY(-40px);
+    }
+    to{
+        transform: translateY(40px);
+    }
+}
